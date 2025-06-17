@@ -142,7 +142,6 @@ if [ -f ${PWD}/../versions.conf ]; then
         sed -i 's+SRCREV_pn-rdk/components/generic/storagemanager/generic+SRCREV_pn-storagemanager+g' ${PWD}/../versions.conf
         sed -i 's+SRCREV_pn-rdk/components/generic/sys_mon_tools/sys_resource/generic+SRCREV_pn-sys-resource +g' ${PWD}/../versions.conf
         sed -i 's+SRCREV_pn-rdk/components/generic/closedcaption/soc/noop/common+SRCREV_pn-closedcaption-hal-noop+g' ${PWD}/../versions.conf
-        sed -i 's+SRCREV_pn-rdk/components/generic/rfc/generic+SRCREV_pn-rfc+g' ${PWD}/../versions.conf
         sed -i 's+SRCREV_pn-rdk/components/generic/control/generic+SRCREV_pn-ctrlm-headers+g' ${PWD}/../versions.conf
         sed -i 's+SRCREV_pn-libtom/libtomcrypt.git+SRCREV_pn-libtomcrypt+g' ${PWD}/../versions.conf
         sed -i 's+SRCREV_pn-rdk/components/generic/trm/generic+SRCREV_pn-trm-common+g' ${PWD}/../versions.conf
@@ -220,7 +219,6 @@ if [ -f ${PWD}/../versions.conf ]; then
         sed -i 's+SRCREV_pn-zserge/jsmn.git+SRCREV_pn-jsmn+g' ${PWD}/../versions.conf
         sed -i 's+SRCREV_pn-rdk/components/cpc/appmanager/generic+SRCREV_cpcmgr_pn-appmanager+g' ${PWD}/../versions.conf
         sed -i 's+SRCREV_pn-rdk/components/generic/aamp+SRCREV_pn-aamp+g' ${PWD}/../versions.conf
-        sed -i 's+SRCREV_pn-rdk/components/generic/rdm+SRCREV_pn-rdm+g' ${PWD}/../versions.conf
         sed -i 's+SRCREV_pn-rdk/components/cpc/authservice/devices/raspberrypi+SRCREV_authdevice_pn-authservice+g' ${PWD}/../versions.conf
         sed -i 's+SRCREV_pn-rdk/components/generic/sys_mon_tools/hostdataconverter/generic+SRCREV_pn-hostdataconverter+g' ${PWD}/../versions.conf
         sed -i 's+SRCREV_pn-rdk/components/generic/fonts/generic+SRCREV_pn-rdk-fonts+g' ${PWD}/../versions.conf
@@ -313,7 +311,6 @@ if [ -f ${PWD}/../auto.conf ]; then
      sed -i 's/SRCREV_pn-audioserver-sample-apps/SRCREV_audioserversampleapps_pn-audioserver-sample-apps/g'  ${PWD}/../auto.conf
      sed -i 's/SRCREV_pn-audioserver-headers/SRCREV_audioserverheaders_pn-audioserver-headers/g'  ${PWD}/../auto.conf
      sed -i 's/SRCREV_pn-audioserver /SRCREV_audioserver_pn-audioserver /g'  ${PWD}/../auto.conf
-     sed -i 's/SRCREV_pn-rdm/SRCREV_rdmgeneric_pn-rdm/g'  ${PWD}/../auto.conf
      sed -i 's/SRCREV_pn-tdk/SRCREV_tdk_pn-tdk/g'  ${PWD}/../auto.conf
      sed -i 's/SRCREV_pn-jsmn/SRCREV_jsmn_pn-jsmn/g'  ${PWD}/../auto.conf  
      sed -i 's/SRCREV_pn-aampabr/SRCREV_aamp-abr_pn-aampabr/g'  ${PWD}/../auto.conf
@@ -337,7 +334,6 @@ if [ -f ${PWD}/../auto.conf ]; then
      sed -i 's/SRCREV_pn-nlmonitor/SRCREV_netmonitor_pn-nlmonitor/g'  ${PWD}/../auto.conf
      sed -i 's/SRCREV_pn-netsrvmgr/SRCREV_netsrvmgr_pn-netsrvmgr/g'  ${PWD}/../auto.conf
      sed -i 's/SRCREV_pn-rdkbrowser /SRCREV_default_pn-rdkbrowser/g'  ${PWD}/../auto.conf
-     sed -i 's/SRCREV_pn-rfc/SRCREV_rfc_pn-rfc/g'  ${PWD}/../auto.conf
      sed -i 's/SRCREV_pn-rmfstreamer/SRCREV_rmfmediastreamergeneric_pn-rmfstreamer/g'  ${PWD}/../auto.conf
      sed -i 's/SRCREV_pn-mfr-utils/SRCREV_mfr-utils_pn-mfr-utils/g'  ${PWD}/../auto.conf
      sed -i 's/SRCREV_pn-sysint/SRCREV_sysintgeneric_pn-sysint/g'  ${PWD}/../auto.conf
