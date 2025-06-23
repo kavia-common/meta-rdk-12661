@@ -13,13 +13,16 @@ S = "${WORKDIR}/git"
 
 inherit pkgconfig autotools coverity
 
+CFLAGS_append = " -Wall -Werror"
+CXXFLAGS_append = " -Wall -Werror"
+
 do_install() {
            install -d ${D}/${bindir}
            install -d ${D}${libdir}
            install -d ${D}${includedir}
            install -m 0755 ${S}/RdkConfigApi/include/rdkconfig.h ${D}${includedir}/
            install -m 0644 RdkConfigApi/src/librdkconfig.a ${D}${libdir}
-           install -m 0755 RdkConfigApi/src/GetConfigFile ${D}/${bindir}/         
+           install -m 0755 RdkConfigApi/src/GetConfigFile ${D}/${bindir}/
 }
 
 FILES_${PN} += "${bindir}/* "

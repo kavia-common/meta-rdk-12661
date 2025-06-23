@@ -9,6 +9,9 @@ DEPENDS += "rdk-logger"
 SRC_URI = "${CMF_GIT_ROOT}/rdk/components/generic/libSyscallWrapper;protocol=${CMF_GIT_PROTOCOL};branch=${CMF_GIT_BRANCH};name=libsyswrapper"
 DEPENDS = "rdk-logger"
 
+CFLAGS_append = " -Wall -Werror"
+CXXFLAGS_append = " -Wall -Werror"
+
 SRCREV_libsyswrapper = "${@bb.utils.contains('DISTRO_FEATURES', 'oldsyswrapper', 'de0d67d81488c68baf2ab3f91f8a054e153d3b96', '${AUTOREV}', d)}"
 SRCREV_FORMAT = "libsyswrapper"
 
